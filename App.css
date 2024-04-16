@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  padding: 10px;
+  max-width: fit-content;
+  margin: 50px auto;
+}
+
+.addContainer h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
+
+.btn {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-add {
+  transition: background-color 0.5s ease, color 0.5s ease; /* Add transition for background color and text color */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ffffff;
+  color: black;
+  margin-top: 100px;
+}
+
+.btn-add:hover {
+  background-color: black; /* Change the background color when hovering */
+  color: white; /* Change the text color when hovering */
+}
+
+.addContainer {
+  position: absolute;
+  background-color: #f3635a;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addContainer form {
+  width: 420px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.addContainer form label {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.addContainer form input {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.addContainer form input#feedback {
+  font-size: 18px;
+
+  padding: 50px;
+}
+
+.addContainer form button {
+  background-color: rgb(32, 144, 223);
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.addContainer form .closebtn {
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tableContainer {
+  text-align: center;
+  margin-top: 80px;
+  overflow-y: auto; /* Add scrollbar if content overflows vertically */
+  max-height: calc(80vh - 150px);
+  /* Set the background color to transparent */
+}
+
+.tableContainer table {
+  /* Set the background color of the table to fully transparent white */
+  border-collapse: separate; /* Separate the borders between table cells */
+  border-spacing: 0 10px; /* Set the spacing between table rows to 10px */
+}
+
+.tableContainer table thead tr th {
+  margin-top: 20px;
+  min-width: 200px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Use rgba to set background color with transparency */
+  padding: 10px;
+  text-align: center;
+}
+
+.tableContainer table tbody tr td {
+  padding: 5px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Use rgba to set background color with transparency */
+}
+
+/* Add this CSS code to change the color when hovering over each row in the table */
+.tableContainer table tbody tr:hover {
+  transition: background-color 0.3s ease, color 0s ease;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Change the background color on hover */
+}
+
+.btn-edit {
+  background-color: black;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background-color: black;
+  color: #ffffff;
+}
+.btn-send {
+  background-color: black;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.btn-edit:hover {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: yellow;
+  color: black;
+}
+
+.btn-delete:hover {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: red;
+  color: black;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tableContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.form-heading {
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-align: center;
+}
+
+/* Add this CSS to your existing styles */
+td.feedback,
+td.replies {
+  max-width: 200px; /* Adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* App.css */
+
+.addContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.feedback-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.feedback-form h3 {
+  margin-top: 0;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  margin-top: 10px;
+}
