@@ -1,0 +1,67 @@
+.add-order {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5%;
+  text-align: center; /* Center the form content */
+}
+
+.add-order form {
+  display: inline-block; /* Display the form as inline-block to center it */
+  text-align: left; /* Reset the text alignment for the form content */
+}
+
+.add-order label {
+  display: block; /* Display labels as block to stack them vertically */
+  margin-bottom: 10px;
+}
+
+.add-order input[type="text"],
+.add-order input[type="date"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Make input fields take up full width */
+}
+
+.add-order .big-input {
+  height: 100px; /* Adjust height as needed */
+}
+
+.add-order .input-group {
+  display: flex;
+  justify-content: space-between; /* Added to space elements evenly */
+  padding: 15px;
+}
+
+.add-order .input-group > div {
+  width: 48%; /* Adjust width as needed */
+  margin: 15px;
+}
+
+.add-order button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-order button:hover {
+  background-color: #0056b3;
+}
+
+#btnad {
+  position: absolute;
+  top: 105%;
+}
+#confirmpaybtn {
+  position: relative; /* Change position to relative */
+  top: -20px; /* Adjust the top position as needed */
+}
