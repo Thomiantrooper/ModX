@@ -1,0 +1,94 @@
+.center_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../public/images/bg.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.login-container {
+  width: 500px !important;
+  text-align: center !important;
+  background-color: rgba(234, 111, 111, 0.5) !important; /* Set background color to red with opacity */
+  padding: 20px !important; /* Add padding for better appearance */
+  border-radius: 10px !important; /* Add border radius for rounded corners */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important; /* Align items to the left */
+  font-size: 25px !important;
+  margin-left: 800px !important; /* Adjust margin-left to position it to the left */
+}
+
+
+.input-group {
+  margin-bottom: 25px;
+  font-size: 25px;
+  width:400px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  width:40px;
+}
+
+.input-group input {
+  width: calc(100% - 5px); /* Adjust input width */
+  padding: 15px; /* Adjust input padding */
+}
+
+.login-button {
+  width: 70%;
+  padding: 8px; /* Adjust padding for smaller button */
+  font-size: 20px; /* Adjust font size for smaller button */
+  margin-top: 10px; /* Add margin to the top */
+}
+
+.additional-info {
+  margin-top: 10px;
+}
+
+.additional-info p {
+  margin-bottom: 10px;
+  
+}
+
+.signup-button {
+  background-color: #f35034; /* Green background */
+  border: none;
+  color: rgb(7, 5, 5);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button,
+.signup-button {
+  background-color: #9fe7f2; /* Green background */
+  border: none;
+  color: rgb(7, 5, 5);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.login-button:hover,
+.signup-button:hover {
+  box-shadow: 0 0 10px #c43319, 0 0 20px #f35034, 0 0 30px #f35034; /* Add glowing effect on hover */
+}

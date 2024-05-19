@@ -1,0 +1,135 @@
+.home-container {
+    text-align: center;
+    background-color: #ffe79a;
+  }
+  
+  .home-header {
+    padding: 20px;
+  }
+  
+  .categories {
+    margin-bottom: 20px;
+  }
+  
+  .category-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .category-button.active {
+    background-color: #ccc;
+  }
+  
+  .products {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .product-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .product-image {
+    max-width: 400px;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-details {
+    padding-top: 10px;
+  }
+  
+  .product-name {
+    margin: 0;
+  }
+  
+  .product-price {
+    margin: 5px 0;
+  }
+  
+  .videos {
+    padding: 20px;
+  }
+  
+  .video {
+    width: 50%;
+    display: inline-block;
+  }
+  
+  .video-player {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    /* Added transition for smooth effect */
+}
+
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    /* Increase size on hover */
+    z-index: 1;
+    /* Ensure image stays on top of other elements */
+}
+
+.intro {
+    font-size: 18px;
+    color: #666;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.step {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.step-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666;
+}
+
+.step-image {
+    width: 100%;
+    border-radius: 8px;
+}

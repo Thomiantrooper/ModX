@@ -1,0 +1,87 @@
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    background-image: url('../../public/images/signupbg.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .signup-container {
+    width: 500px !important;
+    text-align: center !important;
+    background-color: rgba(234, 111, 111, 0.5) !important; /* Set background color to red with opacity */
+    padding: 2px !important; /* Add padding for better appearance */
+    border-radius: 10px !important; /* Add border radius for rounded corners */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; /* Align items to the left */
+    font-size: 20px !important;
+    margin-left: 950px !important; /* Adjust margin-left to position it to the left */
+  }
+  
+  .input-group {
+    margin-bottom: 8px;
+    font-size: 18px;
+    width: 400px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px;
+    width: 1px;
+  }
+  
+  .input-group input {
+    width: calc(100% - 4px); /* Adjust input width */
+    padding: 8px; /* Adjust input padding */
+  }
+  
+  .signup-button {
+    background-color: #eb9bb3; /* Green background */
+    border: none;
+    color: rgb(7, 5, 5);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signup-button:hover {
+    box-shadow: 0 0 10px #c43319, 0 0 20px #f35034, 0 0 30px #f35034; /* Add glowing effect on hover */
+  }
+  
+  .login-button {
+    background-color: #e62935; /* Green background */
+    border: none;
+    color: rgb(7, 5, 5);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .login-button:hover {
+    box-shadow: 0 0 10px #c43319, 0 0 20px #f35034, 0 0 30px #f35034; /* Add glowing effect on hover */
+  }
+  
+  .additional-info {
+    margin-top: 8px;
+  }
+  
+  .additional-info p {
+    margin-bottom: 10px;
+  }
+  

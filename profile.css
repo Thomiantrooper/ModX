@@ -1,0 +1,143 @@
+/* Update the container to position relative */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Ensure the profile container takes up remaining vertical space */
+  min-height: 130vh;
+  position: relative; /* Ensure the container acts as the reference for the box shadow */
+  overflow: hidden; /* Hide overflow to prevent pseudo-element from extending beyond container */
+  
+}
+
+/* Create the color gradient effect */
+.profile-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none; /* Ensure pseudo-element does not interfere with hover */
+  background: linear-gradient(to top left, rgba(9, 10, 9, 0.3) 0%, rgba(73, 246, 93, 0.3) 25%, transparent 25%, transparent 75%, rgba(73, 246, 93, 0.3) 75%, rgba(73, 246, 93, 0.3) 100%), linear-gradient(to bottom right, rgba(73, 246, 93, 0.3) 0%, rgba(73, 246, 93, 0.3) 25%, transparent 25%, transparent 75%, rgba(73, 246, 93, 0.3) 75%, rgba(73, 246, 93, 0.3) 100%);
+  background-size: 100% 100%; /* Ensure gradient covers entire pseudo-element */
+  background-repeat: no-repeat; /* Prevent repetition */
+  transform: translateY(-100%); /* Move the gradient above the container */
+  transition: transform 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+
+
+/* Rest of your CSS */
+.profile-content {
+  max-width: 600px; /* Adjust the width as needed */
+  width: 100%; /* Ensure the content container expands to fill the available space */
+  padding: 20px;
+  border: 2px solid #100f0f;
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for smoother effect */
+  position: relative; /* Ensure pseudo-element is positioned relative to this container */
+}
+
+
+/* Rest of your CSS */
+.profile-form {
+  margin-top: 40px;
+}
+
+.profile-form-group {
+  margin-bottom: 20px;
+}
+
+.profile-label {
+  display: block;
+}
+
+.profile-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.profile-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  background-color: #45a049;
+}
+
+.profile-image {
+  max-width: 80%; /* Set maximum width to prevent expanding beyond the circular container */
+  max-height: 100%; /* Set maximum height to prevent expanding beyond the circular container */
+  width: 70%; /* Ensure the image fills the circular container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 80%;
+  object-fit: cover; /* Ensure the image covers the entire circular container */
+}
+
+
+
+/* Additional CSS for image uploader */
+.image-upload-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload-placeholder {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f9f9f9; /* Placeholder background color */
+  color: #ec0909; /* Placeholder text color */
+  font-size: 14px;
+}
+
+.profile-image-uploader {
+  margin-top: -100px; /* Add margin to create space between the form container and the profile photo uploader */
+  text-align: center;
+  padding:100px;
+}
+
+.user-details-container {
+  border: 2px solid #000; /* Black outline */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  width:80dvb;
+  margin-top: 50px;
+}
+
+body {
+  background-image: url('/public/images/b1.jpg'); /* Path relative to the public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+
+
