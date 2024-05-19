@@ -1,0 +1,141 @@
+/* TasksList.css */
+
+.button {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+#search-btn {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* Center the button horizontally */
+    display: block;
+    /* Ensure it behaves like a block element */
+    width: 15%;
+    /* You can adjust this as needed */
+}
+
+/* Adjust width as needed */
+
+
+/* Search input */
+
+.search-input {
+    width: 60px;
+    /* Adjust width as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    /* Adjust font size as needed */
+    outline: none;
+}
+
+/* Search icon */
+
+
+/* Style for the search input */
+.in {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Style for the search button*/
+
+
+/* Style for the main table */
+table {
+    width: 88%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    /* This centers the table */
+}
+
+/* Style for table header */
+th {
+    background-color: #c9cfd5;
+    color: rgb(99, 28, 28);
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+}
+
+/* Style for table body */
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for odd rows */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Style for buttons inside the table */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for buttons with icons */
+button i {
+    font-size: 1.2rem;
+}
+
+/* Style for modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Style for filters section */
+.filters {
+    margin-top: 20px;
+}
+
+/* Style for select dropdown */
+select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Style for download button */
+/*button.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for download button on hover 
+button.download-btn:hover {
+    background-color: #0056b3;
+}*/
+
+button.download {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 3295px;
+    max-width: 170px;
+    background-color: #007bff;
+}
